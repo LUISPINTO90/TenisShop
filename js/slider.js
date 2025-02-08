@@ -5,26 +5,26 @@ const slides = [
     titleBold: "Raquetas",
     description:
       "Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.",
-    image: "./img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-14053553x.png",
   },
   {
     title: "Mejores",
     titleBold: "Accesorios",
     description:
       "Descubre nuestra selección de accesorios premium para tu juego.",
-    image: "./img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-14053553x.png",
   },
   {
     title: "Pelotas",
     titleBold: "Deportivas",
     description: "Las mejores pelotas para un juego profesional y duradero.",
-    image: "./img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-14053553x.png",
   },
   {
     title: "Equipo",
     titleBold: "Completo",
     description: "Todo lo que necesitas para destacar en la cancha.",
-    image: "./img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-14053553x.png",
   },
 ];
 
