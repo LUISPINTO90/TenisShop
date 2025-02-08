@@ -5,35 +5,35 @@ const slides = [
     titleBold: "Raquetas",
     description:
       "Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.",
-    image: "/img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-1405355@3x.png",
   },
   {
     title: "Mejores",
     titleBold: "Accesorios",
     description:
       "Descubre nuestra selección de accesorios premium para tu juego.",
-    image: "/img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-1405355@3x.png",
   },
   {
     title: "Pelotas",
     titleBold: "Deportivas",
     description: "Las mejores pelotas para un juego profesional y duradero.",
-    image: "/img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-1405355@3x.png",
   },
   {
     title: "Equipo",
     titleBold: "Completo",
     description: "Todo lo que necesitas para destacar en la cancha.",
-    image: "/img/ball-color-court-1405355@3x.png",
+    image: "./img/ball-color-court-1405355@3x.png",
   },
 ];
 
 const cards = [
-  { image: "/img/group-10@3x.png" },
-  { image: "/img/group-10@3x.png" },
-  { image: "/img/group-10@3x.png" },
-  { image: "/img/group-10@3x.png" },
-  { image: "/img/group-10@3x.png" },
+  { image: "./img/group-10@3x.png" },
+  { image: "./img/group-10@3x.png" },
+  { image: "./img/group-10@3x.png" },
+  { image: "./img/group-10@3x.png" },
+  { image: "./img/group-10@3x.png" },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Create navigation dots
     slides.forEach((_, index) => {
       const dot = document.createElement("img");
-      dot.src = index === 0 ? "/img/oval@3x.png" : "/img/oval-2@3x.png";
+      dot.src = index === 0 ? "./img/oval@3x.png" : "./img/oval-2@3x.png";
       dot.alt = index === 0 ? "Active Dot" : "Dot";
       dot.className = "slider-dot";
       dot.addEventListener("click", () => goToSlide(index));
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dots = dotsNavigation.querySelectorAll(".slider-dot");
     dots.forEach((dot, index) => {
       dot.src =
-        index === currentSlide ? "/img/oval@3x.png" : "/img/oval-2@3x.png";
+        index === currentSlide ? "./img/oval@3x.png" : "./img/oval-2@3x.png";
       dot.alt = index === currentSlide ? "Active Dot" : "Dot";
     });
   }
