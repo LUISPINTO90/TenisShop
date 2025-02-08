@@ -1,0 +1,176 @@
+/* Features Section Styles */
+.features-section {
+  width: 100%;
+  margin-top: 4px;
+  background-color: #f3f4f8;
+  position: relative;
+  padding: 0 16px;
+}
+
+.features-section .container {
+  margin: 0 auto;
+  padding: 48px 0;
+  position: relative;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.tennis-label {
+  width: 100%;
+  height: 33px;
+  margin-top: 32px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.87px;
+  text-align: left;
+  color: #cbe346;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.text-content {
+  width: 100%;
+  max-width: 555px;
+}
+
+.title-container {
+  width: 100%;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.06px;
+  color: #1e2335;
+}
+
+.title-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.title-text {
+  margin-right: 8px;
+}
+
+.title-text.block {
+  display: block;
+  margin-top: 4px;
+}
+
+.description {
+  width: 100%;
+  max-width: 393px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.51px;
+  color: #787878;
+}
+
+.history-button {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 234px;
+  height: 53px;
+  border: 1px solid #282e47;
+  border-radius: 26.5px;
+  display: flex;
+  align-items: center;
+  padding: 0 38px;
+  align-self: flex-start;
+  overflow: hidden;
+}
+
+.history-button span {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: 1.01px;
+  color: #273048;
+  margin-right: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-button img {
+  filter: brightness(0);
+  width: 24px;
+  height: 6px;
+}
+
+/* Tablet Styles */
+@media (min-width: 640px) {
+  .features-section {
+    padding: 0;
+  }
+
+  .features-section .container {
+    padding-left: 173px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .features-section {
+    padding: 0;
+  }
+
+  .features-section .container {
+    padding: 64px 168px 64px 173px;
+    height: 392px;
+    position: relative;
+    max-width: none;
+  }
+
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 72rem;
+  }
+
+  .tennis-label {
+    width: 174px;
+    text-align: right;
+  }
+
+  .content-container {
+    margin-left: 51px;
+  }
+
+  .title-container {
+    font-size: 50px;
+    line-height: 57px;
+    max-width: 800px;
+  }
+
+  .title-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .title-text {
+    white-space: nowrap;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .history-button {
+    margin-top: 0;
+    position: absolute;
+    right: 168px;
+    bottom: 64px;
+  }
+}

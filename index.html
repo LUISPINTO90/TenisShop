@@ -1,13 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="globals.css" />
-    <title>Document</title>
+    <title>Tennis Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/court-cards.css" />
+    <link rel="stylesheet" href="css/athletic.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-    <h1>Las mejores raquetas para jugar tenis</h1>
+    <main class="main-container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <!-- Logo y línea vertical -->
+        <header class="header">
+          <img src="img/fill-2.png" alt="Tennis Shop Logo" class="logo" />
+          <div class="vertical-line"></div>
+        </header>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-button" id="menuButton">
+          <img src="img/menu.png" alt="Menu" class="menu-icon" />
+        </button>
+
+        <!-- Contenedor principal -->
+        <div class="hero-content">
+          <!-- Navbar -->
+          <nav class="navbar">
+            <!-- Desktop Menu -->
+            <ul class="desktop-menu">
+              <li>
+                <button class="nav-item active" data-item="Inicio">
+                  Inicio
+                </button>
+              </li>
+              <li>
+                <button class="nav-item" data-item="Acerca de nosotros">
+                  Acerca de nosotros
+                </button>
+              </li>
+              <li>
+                <button class="nav-item" data-item="Historia">Historia</button>
+              </li>
+              <li>
+                <button class="nav-item" data-item="Contacto">Contacto</button>
+              </li>
+            </ul>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+              <ul class="mobile-menu-items">
+                <li><button class="mobile-nav-item active">Inicio</button></li>
+                <li>
+                  <button class="mobile-nav-item">Acerca de nosotros</button>
+                </li>
+                <li><button class="mobile-nav-item">Historia</button></li>
+                <li><button class="mobile-nav-item">Contacto</button></li>
+                <li class="language-selector-mobile">
+                  <button class="lang-btn active" data-lang="es">ES</button>
+                  <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Hero Text -->
+          <div class="hero-text">
+            <h1>
+              <span>Las mejores raquetas para</span>
+              <span>jugar <strong class="highlight">Tennis</strong></span>
+            </h1>
+            <button class="cta-button">
+              <span>ACERCA DE NOSOTROS</span>
+              <img src="img/path@3x.png" alt="Arrow" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Language Selector Desktop -->
+        <div class="language-selector-desktop">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+        <div class="container">
+          <div class="content-wrapper">
+            <span class="tennis-label"> TENNIS </span>
+            <div class="content-container">
+              <div class="text-content">
+                <div class="title-container">
+                  <div class="title-wrap">
+                    <span class="title-text">Raquetas.</span>
+                    <span class="title-text">Accesorios.</span>
+                  </div>
+                  <span class="title-text block">Pelotas.</span>
+                </div>
+                <p class="description">
+                  Conoce nuestras raquetas y aprende a jugar Tennis cómo un
+                  profesional.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="history-button">
+            <span>HISTORIA</span>
+            <img src="img/path@3x.png" alt="Arrow" />
+          </button>
+        </div>
+      </section>
+
+      <!-- Court & Cards Section -->
+      <section class="court-cards-section">
+        <div class="section-container">
+          <!-- Tennis Court Slider -->
+          <div class="court-slider">
+            <div class="slides-container" id="slidesContainer"></div>
+            <div class="dots-navigation" id="dotsNavigation"></div>
+            <div class="slider-controls">
+              <button class="prev-button" id="prevSlide">
+                <img
+                  src="img/path-2@3x.png"
+                  alt="Previous"
+                  class="icon-button"
+                />
+              </button>
+              <button class="next-button" id="nextSlide">
+                <img src="img/path-2@3x.png" alt="Next" class="icon-button" />
+              </button>
+            </div>
+          </div>
+
+          <!-- Cards Slider -->
+          <div class="cards-slider">
+            <div class="cards-container" id="cardsContainer"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Athletic Section -->
+      <section class="athletic-section">
+        <img src="img/action-athlete-ball-342361@2x.png" alt="Tennis Athlete" />
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-content">
+          <nav class="footer-nav">
+            <span class="active">Inicio</span>
+            <span>Acerca de nosotros</span>
+            <span>Historia</span>
+            <span>Contacto</span>
+          </nav>
+
+          <div class="social-icons">
+            <img src="img/group-23@3x.png" alt="Social Icon 1" />
+            <img src="img/group-24@3x.png" alt="Social Icon 2" />
+            <img src="img/group-25@3x.png" alt="Social Icon 3" />
+            <img src="img/group-22@3x.png" alt="Social Icon 4" />
+            <img src="img/group-26@3x.png" alt="Social Icon 5" />
+          </div>
+
+          <div class="footer-logo">
+            <img src="img/fill-2@3x.png" alt="Footer Logo" />
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

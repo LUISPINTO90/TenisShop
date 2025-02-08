@@ -1,0 +1,91 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-color: #cbe346;
+  --text-dark: #1e2335;
+  --text-gray: #787878;
+  --white: #fff;
+}
+
+body {
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.cta-button {
+  display: flex;
+  align-items: center;
+  padding: 0 38px;
+  height: 53px;
+  border: 1px solid var(--white);
+  border-radius: 26.5px;
+  color: var(--white);
+  background: transparent;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cta-button span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+/* Utilities */
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

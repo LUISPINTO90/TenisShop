@@ -1,0 +1,80 @@
+/* Hero Section Styles */
+.hero-section {
+  min-height: 500px;
+  width: 100%;
+  background-image: url("/img/group.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+}
+
+.hero-text {
+  position: relative;
+  top: 125px;
+  width: 100%;
+  max-width: 709px;
+  padding-top: 25px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.05px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+}
+
+.hero-text .highlight {
+  color: var(--primary-color);
+}
+
+.hero-text .cta-button {
+  margin-top: 27px;
+  width: 100%;
+  max-width: 269px;
+}
+
+.hero-text .cta-button img {
+  filter: invert(1) brightness(100);
+  width: 24px;
+  height: 6px;
+}
+
+/* Tablet Styles */
+@media (min-width: 640px) {
+  .hero-content {
+    left: 0;
+    padding-left: 173px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .hero-section {
+    height: 785px;
+  }
+
+  .hero-content {
+    left: 0;
+    right: auto;
+    padding-left: 173px;
+  }
+
+  .hero-text {
+    top: 225px;
+  }
+
+  .hero-text h1 {
+    font-size: 53px;
+    line-height: 68px;
+  }
+}

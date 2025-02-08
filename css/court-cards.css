@@ -1,0 +1,220 @@
+/* Court & Cards Section Styles */
+.court-cards-section {
+  position: relative;
+  width: 100%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Court Slider */
+.court-slider {
+  position: relative;
+  width: 100%;
+  height: 468px;
+  overflow: hidden;
+}
+
+.slides-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute;
+  inset: 0;
+  padding: 4px;
+}
+
+.slide-title {
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  min-height: 151px;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.06px;
+  color: var(--white);
+}
+
+.slide-title .bold {
+  font-weight: bold;
+}
+
+.slide-description {
+  position: absolute;
+  top: 173px;
+  left: 50px;
+  max-width: 303px;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.51px;
+  color: var(--white);
+}
+
+/* Slider Navigation */
+.dots-navigation {
+  position: absolute;
+  top: 309px;
+  left: 50px;
+  display: flex;
+  gap: 24px;
+  z-index: 10;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Slider Controls */
+.slider-controls {
+  position: absolute;
+  top: 352px;
+  left: 40px;
+  display: flex;
+  gap: 19px;
+  z-index: 10;
+}
+
+.prev-button,
+.next-button {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.prev-button {
+  border: 1px solid var(--white);
+  transform: rotate(180deg);
+  background: transparent;
+}
+
+.next-button {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.icon-button {
+  width: 9px;
+  height: 13px;
+}
+
+/* Cards Slider */
+.cards-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0;
+  overflow-x: auto;
+}
+
+.card {
+  position: relative;
+  width: 260px;
+  height: 344px;
+  flex-shrink: 0;
+}
+
+.card-number {
+  position: absolute;
+  left: 27px;
+  top: 24px;
+  width: 39px;
+  height: 39px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 2.11px;
+  color: var(--white);
+  font-family: helvetica, sans-serif;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .section-container {
+    flex-direction: row;
+  }
+
+  .court-slider {
+    width: 530px;
+  }
+
+  .slide-title {
+    left: 200px;
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .slide-description {
+    left: 200px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .dots-navigation {
+    left: 200px;
+  }
+
+  .slider-controls {
+    left: 190px;
+  }
+
+  .cards-slider {
+    width: calc(100% - 530px);
+    margin-left: 0;
+    margin-top: 51px;
+  }
+
+  .cards-container {
+    gap: 36px;
+    margin-left: 52px;
+  }
+
+  .card {
+    width: 288px;
+  }
+
+  .card-number {
+    top: 11px;
+  }
+}

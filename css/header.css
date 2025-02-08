@@ -1,0 +1,169 @@
+/* Header Styles */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 37px;
+  margin-left: 36px;
+  padding-top: 25px;
+}
+
+.vertical-line {
+  display: none;
+}
+
+/* Navigation */
+.navbar {
+  position: relative;
+  top: 44px;
+  color: var(--white);
+}
+
+.desktop-menu {
+  display: none;
+  list-style: none;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 50;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: var(--primary-color);
+  z-index: 40;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+  list-style: none;
+}
+
+.mobile-nav-item {
+  font-size: 32px;
+  color: var(--text-dark);
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mobile-nav-item.active {
+  font-weight: bold;
+}
+
+/* Language Selector */
+.language-selector-desktop {
+  display: none;
+}
+
+.language-selector-mobile {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.lang-btn {
+  font-size: 20px;
+  color: var(--text-dark);
+  opacity: 0.9;
+}
+
+.lang-btn.active {
+  font-weight: bold;
+  opacity: 1;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .logo {
+    margin-left: 36px;
+  }
+
+  .vertical-line {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100vh;
+    margin-left: 105px;
+    background-color: var(--white);
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    gap: 44px;
+  }
+
+  .nav-item {
+    position: relative;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+
+  .nav-item:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .nav-item.active {
+    font-weight: bold;
+    letter-spacing: 1.4px;
+  }
+
+  .nav-item.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 17px;
+    height: 2px;
+    background-color: var(--white);
+  }
+
+  .language-selector-desktop {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 94px;
+    gap: 0.5rem;
+  }
+
+  .language-selector-desktop .lang-btn {
+    font-size: 13px;
+    color: var(--white);
+    letter-spacing: 1.14px;
+  }
+}

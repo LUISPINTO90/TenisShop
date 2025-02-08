@@ -1,0 +1,22 @@
+/* Athletic Section Styles */
+.athletic-section {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  font-size: 0;
+  display: block;
+}
+
+.athletic-section img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .athletic-section img {
+    height: 586px;
+  }
+}
